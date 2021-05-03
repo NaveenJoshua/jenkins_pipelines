@@ -4,7 +4,7 @@ ARG JENKINS_VERSION="2.222.1"
 
 RUN apk add --no-cache curl
 RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/community docker-cli
-RUN curl -SL -o jenkins.war http://mirrors.jenkins.io/war-stable/$JENKINS_VERSION/jenkins.war
+RUN curl -SL -o jenkins.war https://get.jenkins.io/war-stable/latest/jenkins.war
 
 # Jenkins
 FROM alpine:3.11
